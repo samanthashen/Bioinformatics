@@ -1,0 +1,24 @@
+Trypsin	C-terminal side of K or R	if P is C-term to K or R
+"Trypsin (C-term to K/R, even before P)"	C-terminal side of K or R	
+Trypsin (higher specificity)	C-terminal side of K or R	"if P is C-term to K or R; after K in CKY, DKD, CKH, CKD, KKR; after R in RRH, RRR, CRK, DRD, RRF, KRR"
+Lys C	C-terminal side of K	
+Lys N	N-terminal side of K	
+CNBr	C-terminal side of M	
+Arg C	C-terminal side of R	if P is C-term to R
+Asp N	N-terminal side of D	
+Asp N + Lys C	"N-terminal side of D, C-terminal side of K"	
+Asp N + N-terminal Glu	N-terminal side of D or E	
+Asp N + Glu C (bicarbonate)	"N-terminal side of D, C-terminal side of E"	
+Glu C (bicarbonate)	C-terminal side of E	"if P is C-term to E, or if E is C-term to E"
+Glu C (phosphate)	C-terminal side of D or E	"if P is C-term to D or E, or if E is C-term to D or E"
+Glu C (phosphate) + Lys C	"C-terminal side of D, E and K"	"if P is C-term to D or E, or if E is C-term to D or E"
+Glu C (phosphate) + Trypsin	"C-terminal side of D, E, K, R"	"if P is C-term to K, R, D, E, or if E is C-term to D or E"
+Glu C (phosphate) + Chymotrypsin	"C-terminal side of F, L, M, W, Y, D, E"	"if P is C-term to F, L, M, W, Y, D, E, or if E is C-term to D or E, not after Y if P is N-term to Y"
+Microwave-assisted formic acid hydrolysis (C-term to D)	C-terminal side of D	
+"Chymotrypsin (C-term to F/Y/W/M/L, not before P, not after Y if P is C-term to Y)"	"C-terminal side of F, L, M, W, Y"	"if P is C-term to F, L, M, W, Y, if P is N-term to Y"
+"Chymotrypsin (C-term to F/Y/W/, not before P, not after Y if P is C-term to Y)"	"C-terminal side of F, Y, W"	"if P is C-term to F, Y, W, if P is N-term to Y"
+"Trypsin/Chymotrypsin (C-term to K/R/F/Y/W, not before P, not after Y if P is C-term to Y)"	"C-terminal side of K, R, F, Y, W"	"if P is C-term to K, R, F, Y, W, if P is N-term to Y"
+Pepsin (pH 1.3)	"C-terminal side of F, L"	
+Pepsin (pH > 2)	"C-terminal side of F, L, W, Y, A, E, Q"	
+Proteinase K	"C-terminal side of A, F, Y, W, L, I, V"	
+Thermolysin	"N-terminal side of A, F, I, L, M, V"	"if D or E is N-term to A, F, I, L, M, V"

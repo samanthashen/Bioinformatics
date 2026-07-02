@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="${response.charset}" />
+
+  <title py:block="master_title">Your generic title goes here</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="${tg.url('/css/bootstrap.min.css')}" />
+  <link rel="stylesheet" type="text/css" media="screen" href="${tg.url('/css/style.css')}" />
+
+  <py:block name="head"></py:block>
+</head>
+
+<body>
+  <div align="center">
+ 	   <font size="+6">Protein Digest</font>
+  </div>
+
+  <div class="container">
+    <!-- Flash messages -->
+    <py:with vars="flash=tg.flash_obj.render('flash', use_js=False)">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div py:if="flash" py:replace="Markup(flash)" />
+        </div>
+      </div>
+    </py:with>
+
+    <!-- Main included content -->
+    <py:block name="body"></py:block>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer hidden-xs hidden-sm">
+    <div align="center">
+      Made by Samantha Shen for BCHB524
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="${tg.url('/javascript/bootstrap.min.js')}"></script>
+
+</body>
+</html>
+
+

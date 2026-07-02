@@ -1,0 +1,28 @@
+<html py:extends="master.xhtml" py:strip="True">
+    <head py:block="head" py:strip="True">
+        <title py:block="master_title">${title}</title>
+    </head>
+
+    <body py:block="body" py:strip="True">
+      <P/>
+      <table class="table" py:if="len(digest)> 0">
+          <tr>
+            <th>Molecular Weight(Dalton)</th>
+            <th>Position</th>
+            <th>Missed Cleavage</th>
+            <th>Length</th>
+            <th>Fragment</th>
+          </tr>
+          <tr py:for="n in digest">
+              <td>${n[0]}</td>
+              <td>${n[1]}</td>
+              <td>${n[2]}</td>
+              <td>${n[3]}</td>
+              <td>${n[4]}</td>
+          </tr>
+        </table>
+        <P/>
+        <A href="${tg.url('/')}">New search</A>
+    </body>
+</html>
+
